@@ -37,6 +37,6 @@ namespace Concurrency.Domain.Repositories
         /// </summary>
         /// <typeparam name="TEntity">The type of entity</typeparam>
         /// <returns>A repository for the specified entity type</returns>
-        IRepository<TEntity> Repository<TEntity>() where TEntity : class;
+        IRepository<TEntity> _productRepository<TEntity>() where TEntity : class;
     }
 } 

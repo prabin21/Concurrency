@@ -35,13 +35,13 @@ namespace Concurrency.EntityFrameworkCore.UnitOfWork
         /// </summary>
         /// <typeparam name="TEntity">The type of entity</typeparam>
         /// <returns>A repository for the specified entity type</returns>
-        public IRepository<TEntity> Repository<TEntity>() where TEntity : class
+        public IRepository<TEntity> _productRepository<TEntity>() where TEntity : class
         {
             var type = typeof(TEntity);
 
             if (!_repositories.ContainsKey(type))
             {
-                _repositories[type] = new Repository<TEntity>(_dbContext);
+                _repositories[type] = new _productRepository<TEntity>(_dbContext);
             }
 
             return (IRepository<TEntity>)_repositories[type];

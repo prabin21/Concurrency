@@ -14,16 +14,16 @@ namespace Concurrency.EntityFrameworkCore.Repositories
     /// This class provides common CRUD operations for entities.
     /// </summary>
     /// <typeparam name="TEntity">The type of entity this repository handles</typeparam>
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class _productRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly DbContext _context;
         protected readonly DbSet<TEntity> _dbSet;
 
         /// <summary>
-        /// Initializes a new instance of the Repository class.
+        /// Initializes a new instance of the _productRepository class.
         /// </summary>
         /// <param name="context">The database context to use</param>
-        public Repository(DbContext context)
+        public _productRepository(DbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _dbSet = context.Set<TEntity>();

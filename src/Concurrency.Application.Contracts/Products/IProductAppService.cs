@@ -7,12 +7,7 @@ using System.Data;
 
 namespace Concurrency.Products;
 
-public interface IProductAppService : 
-    ICrudAppService<
-        ProductDto,
-        Guid,
-        PagedAndSortedResultRequestDto,
-        CreateUpdateProductDto>
+public interface IProductAppService
 {
     Task<ProductDto> UpdateStockAsync(Guid id, int newQuantity, IsolationLevel? isolationLevel = null);
     Task<ProductDto> UpdatePriceAsync(Guid id, decimal newPrice, IsolationLevel? isolationLevel = null);
