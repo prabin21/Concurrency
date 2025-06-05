@@ -9,7 +9,7 @@ public class Product : AuditedAggregateRoot<Guid>
     public decimal Price { get; set; }
     public int StockQuantity { get; set; }
 
-    protected Product()
+    public Product()
     {
     }
 
@@ -33,5 +33,10 @@ public class Product : AuditedAggregateRoot<Guid>
     public void UpdatePrice(decimal newPrice)
     {
         Price = newPrice;
+    }
+
+    public void UpdateName(string newName)
+    {
+        Name = newName;
     }
 } 

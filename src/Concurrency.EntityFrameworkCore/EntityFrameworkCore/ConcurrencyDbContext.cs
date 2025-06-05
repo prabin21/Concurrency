@@ -13,6 +13,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Concurrency.Products;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Concurrency.EntityFrameworkCore;
 

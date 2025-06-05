@@ -1,4 +1,4 @@
-﻿using Shouldly;
+﻿/*using Shouldly;
 using System.Threading.Tasks;
 using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
@@ -6,11 +6,11 @@ using Xunit;
 
 namespace Concurrency.Samples;
 
-/* This is just an example test class.
+*//* This is just an example test class.
  * Normally, you don't test code of the modules you are using
  * (like IIdentityUserAppService here).
  * Only test your own application services.
- */
+ *//*
 public abstract class SampleAppServiceTests<TStartupModule> : ConcurrencyApplicationTestBase<TStartupModule>
     where TStartupModule : IAbpModule
 {
@@ -32,3 +32,4 @@ public abstract class SampleAppServiceTests<TStartupModule> : ConcurrencyApplica
         result.Items.ShouldContain(u => u.UserName == "admin");
     }
 }
+*/

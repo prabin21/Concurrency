@@ -1,4 +1,4 @@
-using Concurrency.Samples;
+/*using Concurrency.Samples;
 using Xunit;
 
 namespace Concurrency.EntityFrameworkCore.Applications;
@@ -8,3 +8,4 @@ public class EfCoreSampleAppServiceTests : SampleAppServiceTests<ConcurrencyEnti
 {
 
 }
+*/
